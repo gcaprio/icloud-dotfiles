@@ -23,18 +23,15 @@ brew "heroku"
 brew "gpg" # asdf nodejs plugin dep
 brew "gawk" # asdf nodejs plugin dep
 brew "openssl" # asdf ruby plugin
-brew "swiftbar"
 
 cask "iterm2"
 cask "dash"
 cask "deckset"
-cask "skype"
 cask "spotify"
 cask "firefox"
 cask "google-chrome"
 cask "ngrok"
 cask "raycast"
-cask "font-fantasque-sans-mono"
 
 mas "1Password 7", id: 1333542190
 mas "Magnent", id: 441258766
@@ -63,9 +60,6 @@ mas "Paste", id: 967805235
 mas "Littleipsum", id:405772121
 
 # Safari Extensions
-mas "PiPifier", id: 1160374471
-mas "4ktube Extension", id: 1462103187
 mas "Hugh Nag Blocker", id: 1544743900
 mas "Tweaks for Twitter", id: 1567751529
 mas "Save to Pocket", id: 1477385213
-mas "Vinegar - Tube Cleaner", id: 1591303229
