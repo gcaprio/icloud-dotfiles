@@ -1,0 +1,108 @@
+#!/usr/bin/env zsh
+
+set -e
+
+# Create symlinks from iCloud to home directory
+cd "$HOME"
+[ ! -L icloud-drive ] && ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" icloud-drive
+
+# symlink ssh data
+[ ! -L .ssh ] && ln -s "$HOME/icloud-drive/ssh" "$HOME/.ssh"
+cd "$HOME/.ssh"
+chmod 600 *
+chmod 644 *.pub config known_hosts
+
+# Install all the things
+echo "Install oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Install Powerlevel10k Theme"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+echo "ZSH Syntax Highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+echo "Vundle setup"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo "scm_breeze"
+git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+~/.scm_breeze/install.sh
+
+
+cd "$HOME"
+# Link up the dotfiles
+for link in .gitconfig .gitignore_global .vim .vimrc bin .p10k_zsh .zshrc Brewfile; do
+  if [ -L "$HOME/$link" ]; then
+    echo "Link '$link' already exists"
+  else
+    ln -s "icloud-drive/dotfiles/$link" .
+  fi
+done
+
+# Show external media
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+
+#Show All File Extensions
+defaults write -g AppleShowAllExtensions -bool true
+
+#Show status Bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Sets default save target to be a local disk, not iCloud
+defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Enable Develop Menu and Web Inspector
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true 
+defaults write com.apple.Safari IncludeDevelopMenu -bool true 
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true 
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true 
+defaults write -g WebKitDeveloperExtras -bool true
+
+# Use Plain Text Mode as Default
+defaults write com.apple.TextEdit RichText -int 0
+
+# Show the ~/Library folder
+chflags nohidden ~/Library/
+
+# Tweak the Dock
+defaults write com.apple.dock autohide -bool true 
+
+# Restart the Dock and the UI server
+killall Dock 
+killall SystemUIServer
+
+# Install Homebrew and the like
+if command -v brew; then
+  echo "Homebrew installed; updating:"
+  brew update
+else
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval $(/opt/homebrew/bin/brew shellenv)
+  brew bundle
+fi
+
+## Set up node
+#NODE_VERSION="14.18.1"
+#if [ -d ".nodenv/versions/$NODE_VERSION" ]; then
+#  echo "Node $NODE_VERSION already installed"
+#else
+#  nodenv install "$NODE_VERSION"
+#fi
+#eval "$(nodenv init -)"
+#nodenv global "$NODE_VERSION"
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
+
+## Set up ruby
+#for ruby_version in 2.6.6 2.7.4; do
+#  if [ -d ".rvm/versions/$ruby_version" ]; then
+#    echo "Ruby $ruby_version already installed"
+#  else
+#    \curl -sSL https://get.rvm.io | bash -s stable
+#    rvm install "$ruby_version"
+#  fi
+#done
+
+
