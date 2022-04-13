@@ -68,6 +68,9 @@ chflags nohidden ~/Library/
 # Tweak the Dock
 defaults write com.apple.dock autohide -bool true 
 
+# Turn of rearranging spaces based on use
+defaults write com.apple.dock mru-spaces -bool false
+
 # Restart the Dock and the UI server
 killall Dock 
 killall SystemUIServer
