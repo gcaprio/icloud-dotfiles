@@ -41,10 +41,6 @@
  
 [commit]
   verbose = true
-
-[url "ssh://git@heroku.com/"]
-	insteadOf = https://git.heroku.com/
-
 [delta]
   plus-style = "syntax #012800"
   minus-style = "syntax #340001"

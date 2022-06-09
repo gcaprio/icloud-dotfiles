@@ -23,6 +23,8 @@ brew "heroku"
 brew "gpg" # asdf nodejs plugin dep
 brew "gawk" # asdf nodejs plugin dep
 brew "openssl" # asdf ruby plugin
+brew "datamash"
+brew "exiftool"
 
 cask "iterm2"
 cask "dash"

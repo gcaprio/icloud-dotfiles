@@ -105,6 +105,11 @@ alias top='htop'
 alias man='tldr'
 alias grep='rg'
 
+# Shopify Aliases
+alias sts='shopify theme serve'
+alias sl='f() { shopify login --store=$1 };f'
+
+
 # Enable Vi mode
 bindkey -v
 export KEYTIMEOUT=1
@@ -132,3 +137,11 @@ eval "$(zoxide init zsh)"
 # Load asdf
 export ASDF_DIR="$(brew --prefix asdf)/libexec"
 source $ASDF_DIR/asdf.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ $ITERM_SESSION_ID ]; then
+precmd() {
+  echo -ne "\033]0;${PWD##*/}\007"
+}
+fi
