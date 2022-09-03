@@ -28,12 +28,16 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 " Javascript Support
 Plugin 'pangloss/vim-javascript'
+" Tab Autocomplete
+Plugin 'ervandew/supertab'
 
 " Visuals 
-" Papercolor Theme
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'joshdick/onedark.vim'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'phanviet/vim-monokai-pro'
+Plugin 'sainnhe/sonokai'
 
 " Status bar
 Plugin 'bling/vim-airline'
@@ -55,7 +59,7 @@ set number
 set laststatus=2
 " Sweet Sweet whitespace dots
 set list
-set lcs=space:·
+"set lcs=space:·
 
 "set guifont=SauceCodePro\ Nerd\ Font\ Mono:h14
 "set guifont=Fantasque\ Sans\ Mono:h14
@@ -70,19 +74,17 @@ set hidden
 " Configured what level folds are opened to
 "set foldlevel=2
 
+syntax on
+
 " Theme Options
 set background=dark
 set termguicolors
-"let g:airline_theme='papercolor'
-let g:airline_theme='onedark'
-let g:airline_powerline_fonts = 1
 
-syntax on
-colorscheme onedark
-"colorscheme Papercolor
-"colorscheme monokai_pro
-"colorscheme cobalt2
-"colorscheme material
+let g:airline_powerline_fonts = 1
+let g:sonokai_style = 'default'
+let g:sonokai_better_performance = 1
+let g:airline_theme = 'sonokai'
+colorscheme sonokai
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
@@ -103,3 +105,12 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
+
+" Setup esline as a fixer for ALE
+let g:ale_fixers = {
+    \   'javascript': ['eslint'],
+    \}
+" Configure eslint for ALE JS Linting
+let g:ale_linters = {
+    \   'javascript': ['eslint'],
+    \}
