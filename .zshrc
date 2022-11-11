@@ -145,3 +145,6 @@ precmd() {
   echo -ne "\033]0;${PWD##*/}\007"
 }
 fi
+
+# To customize prompt, run `p10k configure` or edit ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh.
+[[ ! -f ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh ]] || source ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh
