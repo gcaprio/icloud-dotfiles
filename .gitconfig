@@ -1,10 +1,10 @@
 [user]
-	name = gcaprio
-	email = me@griffincaprio.com
+  name = gcaprio
+  email = me@griffincaprio.com
 
 [core]
-	excludesfile = ~/.gitignore_global
-	quotepath = false
+  excludesfile = ~/.gitignore_global
+  quotepath = false
   pager = delta
 
 [alias]
@@ -38,7 +38,7 @@
   frag = magenta bold
   old = red bold
   new = green bold
- 
+
 [commit]
   verbose = true
 [delta]
@@ -48,8 +48,9 @@
   navigate = true
   line-numbers = true
   side-by-side = true
+  hyperlinks = true
 
 [interactive]
   diffFilter = delta --color-only
 [init]
-	defaultBranch = main
+  defaultBranch = main

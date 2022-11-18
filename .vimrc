@@ -39,6 +39,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'phanviet/vim-monokai-pro'
 Plugin 'sainnhe/sonokai'
 Plugin 'lifepillar/vim-gruvbox8'
+Plugin 'overcache/NeoSolarized'
 
 " Status bar
 Plugin 'bling/vim-airline'
@@ -86,7 +87,8 @@ let g:sonokai_style = 'default'
 let g:sonokai_better_performance = 1
 let g:airline_theme = 'sonokai'
 "colorscheme sonokai
-colorscheme gruvbox8
+"colorscheme gruvbox8
+colorscheme NeoSolarized
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
