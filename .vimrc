@@ -40,6 +40,7 @@ Plugin 'phanviet/vim-monokai-pro'
 Plugin 'sainnhe/sonokai'
 Plugin 'lifepillar/vim-gruvbox8'
 Plugin 'overcache/NeoSolarized'
+Plugin 'KeitaNakamura/neodark.vim'
 
 " Status bar
 Plugin 'bling/vim-airline'
@@ -63,8 +64,6 @@ set laststatus=2
 set list
 "set lcs=space:·
 
-"set guifont=SauceCodePro\ Nerd\ Font\ Mono:h14
-"set guifont=Fantasque\ Sans\ Mono:h14
 set tabstop=2
 set shiftwidth=2
 set smartindent
@@ -83,12 +82,9 @@ set background=dark
 set termguicolors
 
 let g:airline_powerline_fonts = 1
-let g:sonokai_style = 'default'
-let g:sonokai_better_performance = 1
-let g:airline_theme = 'sonokai'
-"colorscheme sonokai
-"colorscheme gruvbox8
-colorscheme NeoSolarized
+let g:airline_theme = 'neodark'
+let g:neodark#italics = 1
+colorscheme neodark
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
