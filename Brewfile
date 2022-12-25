@@ -13,22 +13,13 @@ brew "prettyping"
 brew "tldr"
 brew "git-delta"
 brew "ripgrep"
-brew "pygitup"
-brew "lefthook"
 brew "zoxide"
 brew "fzf"
-brew "themekit"
-brew "postgresql@13"
 brew "heroku"
-brew "gpg" # asdf nodejs plugin dep
-brew "gawk" # asdf nodejs plugin dep
-brew "openssl" # asdf ruby plugin
-brew "datamash"
 brew "exiftool"
 
 cask "iterm2"
 cask "dash"
-cask "deckset"
 cask "spotify"
 cask "firefox"
 cask "google-chrome"
@@ -51,17 +42,15 @@ mas "Pixelmator Pro", id: 1289583905
 mas "Tot", id: 1491071483
 mas "Microsoft Word", id: 462054704
 mas "Microsoft Excel", id: 462058435
-mas "Microsoft Powerpoint", id: 462062816
 mas "Hand Mirror", id: 1502839586
 mas "Slack", id: 803453959
 mas "Fantastical", id: 975937182
-mas "Cardhop", id: 1290358394
 mas "Paste", id: 967805235
 mas "Parcel",id: 639968404
 
 # Safari Extensions
 mas "Hugh Nag Blocker", id: 1544743900
 mas "Tweaks for Twitter", id: 1567751529
-mas "Save to Pocket", id: 1477385213
 mas "Vinegar", id: 1591303229
 mas "Baking Soda", id: 1601151613
+max "Save to Reader", id: 1640236961
