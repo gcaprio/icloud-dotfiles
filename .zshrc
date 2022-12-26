@@ -68,7 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git autopep8 common-aliases macos vi-mode zsh-syntax-highlighting ruby rails rvm asdf)
 
 # User configuration
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@13/bin:"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -133,10 +133,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/postgresql@13/lib/pkgconfig"
 eval "$(zoxide init zsh)"
 
 [ -s "/Users/gcaprio/.scm_breeze/scm_breeze.sh" ] && source "/Users/gcaprio/.scm_breeze/scm_breeze.sh"
-
-# Load asdf
-export ASDF_DIR="$(brew --prefix asdf)/libexec"
-source $ASDF_DIR/asdf.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

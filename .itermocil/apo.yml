@@ -1,0 +1,8 @@
+windows:
+  - name: Autos Part Outlet
+    root: ~/source/autospartoutlet
+    layout: even-vertical
+    panes:
+      - commands:
+        - sl autospartoutlet
+        - sts

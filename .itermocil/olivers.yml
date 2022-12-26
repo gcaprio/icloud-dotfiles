@@ -1,0 +1,8 @@
+windows:
+  - name: Olivers Apparel
+    root: ~/source/olivers
+    layout: even-vertical
+    panes:
+      - commands:
+        - sl olivers-apparel
+        - sts

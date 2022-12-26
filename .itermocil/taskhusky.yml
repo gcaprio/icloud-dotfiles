@@ -1,0 +1,8 @@
+windows:
+  - name: Task Husky Clean Size Charts
+    root: ~/source/taskhusky/shopify-app-size-chart
+    layout: even-vertical
+    panes:
+      - foreman start
+      - ngrok http 3000 --subdomain=no-fixed-plans
+      - ./bin/webpack -w

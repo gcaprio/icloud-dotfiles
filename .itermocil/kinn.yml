@@ -1,0 +1,8 @@
+windows:
+  - name: kinn-studio
+    root: ~/source/kinn-studio
+    layout: even-horizontal
+    panes:
+      - commands:
+        - sl kinn-studio
+        - sts

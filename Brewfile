@@ -2,6 +2,7 @@ tap "homebrew/cask"
 tap "shopify/shopify"
 tap "heroku/brew"
 tap "homebrew/cask-fonts"
+tap "TomAnthony/brews" # itermocli
 
 cask_args appdir: "/Applications"
 
@@ -17,6 +18,13 @@ brew "zoxide"
 brew "fzf"
 brew "heroku"
 brew "exiftool"
+brew "postgresql@14"
+brew "openssl@3"
+brew "libyaml"
+brew "readline"
+brew "gmp"
+brew "redis"
+brew "itermocil"
 
 cask "iterm2"
 cask "dash"
@@ -54,4 +62,4 @@ mas "Hugh Nag Blocker", id: 1544743900
 mas "Tweaks for Twitter", id: 1567751529
 mas "Vinegar", id: 1591303229
 mas "Baking Soda", id: 1601151613
-max "Save to Reader", id: 1640236961
+mas "Save to Reader", id: 1640236961

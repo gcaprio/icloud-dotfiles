@@ -1,0 +1,15 @@
+windows:
+  - name: Ultimate Auto Parts Toolkit Shoify App
+    root: ~/source/uapt-shopify-app/
+    layout: even-vertical
+    panes:
+      - rails server
+      - bundle exec sidekiq
+      - ngrok http 3001 --subdomain=no-fixed-plans
+      - commands:
+        - cd frontend
+        - export FRONTEND_PORT=3001
+        - export BACKEND_PORT=3000
+        - export SHOPIFY_API_KEY=bf8c0c64d636356e0c679bd0abbe025a
+        - npm run dev
+

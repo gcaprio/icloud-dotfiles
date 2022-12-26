@@ -1,6 +1,6 @@
 [user]
-  name = gcaprio
-  email = me@griffincaprio.com
+	name = gcaprio
+	email = me@griffincaprio.com
 
 [core]
   excludesfile = ~/.gitignore_global

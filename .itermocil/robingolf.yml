@@ -1,0 +1,8 @@
+windows:
+  - name: Robin Golf 
+    root: ~/source/rg/Robin-Golf
+    layout: even-vertical
+    panes:
+      - commands:
+        - sl robingolf
+        - sts
