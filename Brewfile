@@ -47,6 +47,7 @@ mas "Slack", id: 803453959
 mas "Fantastical", id: 975937182
 mas "Paste", id: 967805235
 mas "Parcel",id: 639968404
+mas "Drafts", id: 1435957248
 
 # Safari Extensions
 mas "Hugh Nag Blocker", id: 1544743900
