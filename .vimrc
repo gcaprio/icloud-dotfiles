@@ -31,7 +31,7 @@ Plugin 'pangloss/vim-javascript'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
 
-" Visuals 
+" Visuals
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'joshdick/onedark.vim'
 Plugin 'nanotech/jellybeans.vim'

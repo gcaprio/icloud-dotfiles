@@ -23,7 +23,7 @@ brew "openssl@3"
 brew "libyaml"
 brew "readline"
 brew "gmp"
-brew "redis"
+brew "redis@6.2"
 brew "itermocil"
 
 cask "iterm2"

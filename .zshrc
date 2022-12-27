@@ -68,7 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git autopep8 common-aliases macos vi-mode zsh-syntax-highlighting ruby rails rvm asdf)
 
 # User configuration
-export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:"
+export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:"
 
 source $ZSH/oh-my-zsh.sh
 
