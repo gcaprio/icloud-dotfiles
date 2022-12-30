@@ -1,6 +1,6 @@
 windows:
   - name: Task Husky Clean Size Charts
-    root: ~/source/taskhusky/shopify-app-size-chart
+    root: ~/source/shopify-app-size-chart
     layout: even-vertical
     panes:
       - foreman start

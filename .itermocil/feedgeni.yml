@@ -1,11 +1,10 @@
 windows:
   - name: Feedgeni Shoify App
-    root: ~/source/fg/
-    layout: even-vertical
-    panes:
-      - ngrok http 3005 --subdomain=no-fixed-plans
-      - commands:
-        - cd feedgeni-dashboard-2.0
-        - export HTTPS=true
-        - export PORT=3005
-        - npm start -- --reset-cache
+    layout: vertical
+    commands:
+      - cd ~/source/feedgeni-dashboard-2.0
+      - export HTTPS=true
+      - export PORT=3005
+      - export SSL_CRT_FILE=`pwd`/localhost.pem
+      - export SSL_KEY_FILE=`pwd`/localhost-key.pem
+      - npm start -- --reset-cache
