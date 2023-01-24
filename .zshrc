@@ -106,8 +106,8 @@ alias man='tldr'
 alias grep='rg'
 
 # Shopify Aliases
-alias sts='shopify theme serve'
-alias sl='f() { shopify login --store=$1 };f'
+alias sts='shopify2 theme serve'
+alias sl='f() { shopify2 login --store=$1 };f'
 
 
 # Enable Vi mode
