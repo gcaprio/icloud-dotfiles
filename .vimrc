@@ -13,6 +13,8 @@ Plugin 'tpope/vim-sensible'
 "Syntax highlights
 Plugin 'sheerun/vim-polyglot'
 Plugin 'slim-template/vim-slim.git'
+Plugin 'yuezk/vim-js'
+Plugin 'maxmellon/vim-jsx-pretty'
 " File manager
 Bundle 'scrooloose/nerdtree'
 " Built in ACK
@@ -85,6 +87,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'neodark'
 let g:neodark#italics = 1
 colorscheme neodark
+
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
