@@ -25,6 +25,7 @@ brew "readline"
 brew "gmp"
 brew "redis@6.2"
 brew "itermocil"
+brew "miller"
 
 cask "iterm2"
 cask "dash"
