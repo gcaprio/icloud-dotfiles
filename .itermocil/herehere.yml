@@ -1,6 +1,6 @@
 windows:
   - name: herehere
-    root: ~/source/herehere-markets-shopify
+    root: ~/source/here-here-markets-shopify
     layout: even-horizontal
     panes:
       - commands:
