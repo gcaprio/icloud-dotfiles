@@ -109,6 +109,9 @@ alias grep='rg'
 alias sts='shopify2 theme serve'
 alias sl='f() { shopify2 login --store=$1 };f'
 
+# Use Universal ctags, not built in
+alias ctags="`brew --prefix`/bin/ctags"
+
 
 # Enable Vi mode
 bindkey -v

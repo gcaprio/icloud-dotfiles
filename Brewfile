@@ -26,6 +26,7 @@ brew "gmp"
 brew "redis@6.2"
 brew "itermocil"
 brew "miller"
+brew "universal-ctags"
 
 cask "iterm2"
 cask "dash"
