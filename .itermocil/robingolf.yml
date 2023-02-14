@@ -1,6 +1,6 @@
 windows:
   - name: Robin Golf 
-    root: ~/source/rg/Robin-Golf
+    root: ~/source/robin-golf-peter
     layout: even-vertical
     panes:
       - commands:

@@ -1,10 +1,13 @@
 windows:
-  - name: Feedgeni Shoify App
-    layout: vertical
-    commands:
-      - cd ~/source/feedgeni-dashboard-2.0
-      - export HTTPS=true
-      - export PORT=3005
-      - export SSL_CRT_FILE=`pwd`/localhost.pem
-      - export SSL_KEY_FILE=`pwd`/localhost-key.pem
-      - npm start -- --reset-cache
+  - name: Feedgeni App
+    layout: even-vertical
+    root: ~/source/feedgeni-workers/
+    panes:
+      - php artisan product:prepare 
+      - commands:
+        - cd ~/source/feedgeni-dashboard-2.0
+        - export HTTPS=true
+        - export PORT=3005
+        - export SSL_CRT_FILE=`pwd`/localhost.pem
+        - export SSL_KEY_FILE=`pwd`/localhost-key.pem
+        - npm start -- --reset-cache
