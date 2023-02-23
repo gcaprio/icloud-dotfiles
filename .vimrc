@@ -44,6 +44,8 @@ Plugin 'lifepillar/vim-gruvbox8'
 Plugin 'overcache/NeoSolarized'
 Plugin 'KeitaNakamura/neodark.vim'
 Plugin 'ackyshake/Spacegray.vim'
+Plugin 'romainl/Apprentice'
+Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Status bar
 Plugin 'bling/vim-airline'
@@ -85,11 +87,13 @@ set background=dark
 set termguicolors
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'neodark'
-let g:spacegray_low_contrast = 1
-let g:spacegray_use_italics = 1
-colorscheme spacegray
-
+"let g:airline_theme = 'neodark'
+"let g:spacegray_low_contrast = 1
+"let g:spacegray_use_italics = 1
+"colorscheme spacegray
+"colorscheme apprentice
+let g:airline_theme = 'catppuccin_mocha'
+colorschem catppuccin_frappe
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
