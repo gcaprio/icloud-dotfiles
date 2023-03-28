@@ -3,7 +3,8 @@ windows:
     layout: even-vertical
     root: ~/source/feedgeni-workers/
     panes:
-      - php artisan product:prepare 
+      - php artisan product:prepare
+      - php artisan product:save
       - commands:
         - cd ~/source/feedgeni-dashboard-2.0
         - export HTTPS=true

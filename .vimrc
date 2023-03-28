@@ -32,6 +32,9 @@ Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
+" Dash Plugin
+Plugin 'rizzatti/dash.vim'
+
 
 " Visuals
 Plugin 'NLKNguyen/papercolor-theme'

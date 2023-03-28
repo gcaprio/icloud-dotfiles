@@ -1,6 +1,6 @@
 windows:
   - name: Olivers Apparel
-    root: ~/source/olivers
+    root: ~/source/olivers-apparel
     layout: even-vertical
     panes:
       - commands:

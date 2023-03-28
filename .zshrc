@@ -1,3 +1,5 @@
+GITSTATUS_LOG_LEVEL=DEBUG
+
 # Homebrew Autocomplete Setup
  if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -68,7 +70,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git autopep8 common-aliases macos vi-mode zsh-syntax-highlighting ruby rails rvm asdf)
 
 # User configuration
-export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:"
+export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:/Users/gcaprio/.webdrivers"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -147,3 +149,4 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh.
 [[ ! -f ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh ]] || source ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/dotfiles/.p10k.zsh
+
