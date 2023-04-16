@@ -13,8 +13,6 @@ Plugin 'tpope/vim-sensible'
 "Syntax highlights
 Plugin 'sheerun/vim-polyglot'
 Plugin 'slim-template/vim-slim.git'
-Plugin 'yuezk/vim-js'
-Plugin 'maxmellon/vim-jsx-pretty'
 " File manager
 Bundle 'scrooloose/nerdtree'
 " Built in ACK
@@ -23,6 +21,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Linting
 Plugin 'dense-analysis/ale'
+" Auto End certain structures: when, if, etc..
 Plugin 'tpope/vim-endwise'
 " Ruby Support
 Plugin 'vim-ruby/vim-ruby'
@@ -30,6 +29,8 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 " Javascript Support
 Plugin 'pangloss/vim-javascript'
+Plugin 'yuezk/vim-js'
+Plugin 'maxmellon/vim-jsx-pretty'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
 " Dash Plugin
@@ -37,17 +38,17 @@ Plugin 'rizzatti/dash.vim'
 
 
 " Visuals
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'joshdick/onedark.vim'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'phanviet/vim-monokai-pro'
-Plugin 'sainnhe/sonokai'
-Plugin 'lifepillar/vim-gruvbox8'
-Plugin 'overcache/NeoSolarized'
-Plugin 'KeitaNakamura/neodark.vim'
-Plugin 'ackyshake/Spacegray.vim'
-Plugin 'romainl/Apprentice'
+#Plugin 'NLKNguyen/papercolor-theme'
+#Plugin 'joshdick/onedark.vim'
+#Plugin 'nanotech/jellybeans.vim'
+#Plugin 'altercation/vim-colors-solarized'
+#Plugin 'phanviet/vim-monokai-pro'
+#Plugin 'sainnhe/sonokai'
+#Plugin 'lifepillar/vim-gruvbox8'
+#Plugin 'overcache/NeoSolarized'
+#Plugin 'KeitaNakamura/neodark.vim'
+#Plugin 'ackyshake/Spacegray.vim'
+#Plugin 'romainl/Apprentice'
 Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Status bar
