@@ -38,17 +38,17 @@ Plugin 'rizzatti/dash.vim'
 
 
 " Visuals
-#Plugin 'NLKNguyen/papercolor-theme'
-#Plugin 'joshdick/onedark.vim'
-#Plugin 'nanotech/jellybeans.vim'
-#Plugin 'altercation/vim-colors-solarized'
-#Plugin 'phanviet/vim-monokai-pro'
-#Plugin 'sainnhe/sonokai'
-#Plugin 'lifepillar/vim-gruvbox8'
-#Plugin 'overcache/NeoSolarized'
-#Plugin 'KeitaNakamura/neodark.vim'
-#Plugin 'ackyshake/Spacegray.vim'
-#Plugin 'romainl/Apprentice'
+"Plugin 'NLKNguyen/papercolor-theme'
+"Plugin 'joshdick/onedark.vim'
+"Plugin 'nanotech/jellybeans.vim'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'phanviet/vim-monokai-pro'
+"Plugin 'sainnhe/sonokai'
+"Plugin 'lifepillar/vim-gruvbox8'
+"Plugin 'overcache/NeoSolarized'
+"Plugin 'KeitaNakamura/neodark.vim'
+"Plugin 'ackyshake/Spacegray.vim'
+"Plugin 'romainl/Apprentice'
 Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Status bar

@@ -67,7 +67,17 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git, autopep8, common-aliases, fabric, osx, pip, pyenv, pylint, python, supervisor, vagrant, vi-mode, virtualenvwrapper, zsh-syntax-highlighting)
-plugins=(git autopep8 common-aliases macos vi-mode zsh-syntax-highlighting ruby rails rvm asdf)
+plugins=(
+  git
+  common-aliases
+  macos
+  vi-mode
+  zsh-syntax-highlighting
+  ruby
+  rails
+  asdf
+  zsh-autosuggestions
+)
 
 # User configuration
 export PATH="/opt/homebrew/opt/redis@6.2/bin:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/postgresql@14/bin:/Users/gcaprio/.webdrivers"
