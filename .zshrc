@@ -98,8 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias upgrade_oh_my_zsh="omz update"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias obsvimon="defaults write md.obsidian ApplePressAndHoldEnabled -bool false"
-alias obsvimoff="defaults write md.obsidian ApplePressAndHoldEnabled -bool true"
 alias config='/usr/bin/git --git-dir=$HOME/.config/.git/ --work-tree=$HOME'
 alias rtest='RAILS_ENV=test rspec spec'
 
