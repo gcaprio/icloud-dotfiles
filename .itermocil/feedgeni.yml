@@ -5,7 +5,7 @@ windows:
     panes:
       - php artisan product:prepare
       - php artisan product:save
-      - php artisan shopify_webhooks:shopify_webhook_aws_sqs
+      - php artisan fg:shopify:process-shopify-webhooks-from-aws-sqs
       - php artisan schedule:work
       - commands:
         - cd ~/source/feedgeni-apigateway
