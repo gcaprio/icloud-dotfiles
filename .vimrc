@@ -33,9 +33,9 @@ Plugin 'yuezk/vim-js'
 Plugin 'maxmellon/vim-jsx-pretty'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
-" Dash Plugin
-Plugin 'rizzatti/dash.vim'
 
+" Copilot
+Plugin 'github/copilot.vim'
 
 " Visuals
 "Plugin 'NLKNguyen/papercolor-theme'
@@ -91,11 +91,14 @@ set background=dark
 set termguicolors
 
 let g:airline_powerline_fonts = 1
+
 "let g:airline_theme = 'neodark'
 "let g:spacegray_low_contrast = 1
 "let g:spacegray_use_italics = 1
 "colorscheme spacegray
 "colorscheme apprentice
+
+" Catppuccin Scheme
 let g:airline_theme = 'catppuccin_mocha'
 colorschem catppuccin_frappe
 
@@ -115,7 +118,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 " Ignore some folders and files for CtrlP indexing
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp$',
+  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp|vendor$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
 

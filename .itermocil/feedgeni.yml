@@ -3,17 +3,17 @@ windows:
     layout: even-vertical
     root: ~/source/feedgeni-workers/
     panes:
-      - php artisan product:prepare
-      - php artisan product:save
+      - php artisan fg:prepare-products
+      - php artisan fg:product-save
       - php artisan fg:shopify:process-shopify-webhooks-from-aws-sqs
+      - php artisan fg:shopify:process-product-create-update-webhooks
+      - php artisan fg:bigcommerce:process-webhooks-from-aws-sqs
+      - php artisan fg:bigcommerce:process-webhooks
       - php artisan schedule:work
       - commands:
         - cd ~/source/feedgeni-apigateway
         - php artisan horizon
       - commands:
-        - cd ~/source/feedgeni-dashboard-2.0
-        - export HTTPS=true
-        - export PORT=3005
-        - export SSL_CRT_FILE=`pwd`/localhost.pem
-        - export SSL_KEY_FILE=`pwd`/localhost-key.pem
-        - npm start -- --reset-cache
+        - cd ~/source/feedgeni-dashboard
+        - npm run cert
+        - npm start

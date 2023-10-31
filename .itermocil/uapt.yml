@@ -3,13 +3,12 @@ windows:
     root: ~/source/uapt-shopify-app/
     layout: even-vertical
     panes:
-      - ./deploy_extensions.sh local false
       - ngrok http 3001 --subdomain=no-fixed-plans
       - commands:
         - export FRONTEND_PORT=3001
         - export BACKEND_PORT=3000
         - export SHOPIFY_API_KEY=bf8c0c64d636356e0c679bd0abbe025a
-        - npm run dev -- --tunnel ngrok
+        - npm run dev -- --tunnel-url https://no-fixed-plans.ngrok.io:8888
       - commands:
         - cd web
         - bundle exec sidekiq

@@ -13,8 +13,8 @@ chmod 600 *
 chmod 644 *.pub config known_hosts
 
 # Install all the things
-echo "Install oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# echo "Install oh-my-zsh"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Install Powerlevel10k Theme"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -107,6 +107,9 @@ asdf plugin-add php https://github.com/asdf-community/asdf-php.git
 
 # Setup ngrok
 ngrok config add-authtoken 1zkIJKvzuFwk5JXhahRyKFCa1RI_6GwCghvzvrqn56SufMLwe
+
+# install csv-diff
+pip install csv-diff
 
 # Setup Reverse Search w/ fzf
 $(brew --prefix)/opt/fzf/install
