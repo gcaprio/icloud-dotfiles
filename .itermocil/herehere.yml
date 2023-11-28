@@ -1,8 +1,0 @@
-windows:
-  - name: herehere
-    root: ~/source/here-here-markets-shopify
-    layout: even-horizontal
-    panes:
-      - commands:
-        - sl virtual-dining
-        - sts

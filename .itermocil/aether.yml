@@ -1,8 +1,0 @@
-windows:
-  - name: aether
-    root: ~/source/aether-diamonds
-    layout: even-horizontal
-    panes:
-      - commands:
-        - sl aether-diamonds
-        - sts

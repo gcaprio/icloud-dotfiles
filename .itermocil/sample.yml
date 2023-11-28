@@ -1,7 +1,0 @@
-windows:
-  - name: sample-two-panes
-    root: ~/source/hotspot
-    layout: even-horizontal
-    panes:
-      - git status
-      - rails s -p 3000
