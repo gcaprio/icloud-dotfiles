@@ -64,4 +64,3 @@ mas "Hugh Nag Blocker", id: 1544743900
 mas "Tweaks for Twitter", id: 1567751529
 mas "Vinegar", id: 1591303229
 mas "Baking Soda", id: 1601151613
-mas "Save to Reader", id: 1640236961

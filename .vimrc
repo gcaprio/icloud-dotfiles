@@ -114,7 +114,7 @@ let g:NERDTreeWinSize=45
 map <Leader>n :NERDTreeFind<CR>
 
 " Setup Ignores
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/node_modules/*     " MacOSX/Linux
 
 " Ignore some folders and files for CtrlP indexing
 let g:ctrlp_custom_ignore = {
