@@ -5,11 +5,15 @@ windows:
     panes:
       - php artisan fg:prepare-products
       - php artisan fg:product-save
-      - php artisan fg:shopify:process-shopify-webhooks-from-aws-sqs
       - php artisan fg:shopify:process-product-create-update-webhooks
-      - php artisan fg:bigcommerce:process-webhooks-from-aws-sqs
       - php artisan fg:bigcommerce:process-webhooks
       - php artisan schedule:work
+      - commands:
+        - cd ~/source/feedgeni-apigateway
+        - php artisan fg:bigcommerce:process-webhooks-from-aws-sqs
+      - commands:
+        - cd ~/source/feedgeni-apigateway
+        - php artisan fg:shopify:process-shopify-webhooks-from-aws-sqs
       - commands:
         - cd ~/source/feedgeni-apigateway
         - php artisan horizon
