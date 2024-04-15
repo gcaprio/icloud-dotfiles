@@ -34,9 +34,6 @@ Plugin 'maxmellon/vim-jsx-pretty'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
 
-" Copilot
-Plugin 'github/copilot.vim'
-
 " Visuals
 "Plugin 'NLKNguyen/papercolor-theme'
 "Plugin 'joshdick/onedark.vim'
