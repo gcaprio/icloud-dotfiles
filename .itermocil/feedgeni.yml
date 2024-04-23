@@ -6,6 +6,7 @@ windows:
       - stripe listen --forward-to https://feedgeni-apigateway.test:443/stripe/webhook 
       - php artisan fg:prepare-products
       - php artisan fg:product-save
+      - php artisan fg:metafields:fetch-save
       - php artisan fg:shopify:process-product-create-update-webhooks
       - php artisan fg:bigcommerce:process-webhooks
       - php artisan schedule:work

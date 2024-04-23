@@ -8,17 +8,23 @@ call vundle#begin()
 
 "Plugin Manager
 Plugin 'gmarik/Vundle.vim'
+
 " Sensible Defaults
 Plugin 'tpope/vim-sensible'
+
 "Syntax highlights
 Plugin 'sheerun/vim-polyglot'
 Plugin 'slim-template/vim-slim.git'
+
 " File manager
 Bundle 'scrooloose/nerdtree'
-" Built in ACK
-Plugin 'mileszs/ack.vim'
+
 " Autocomplete
-Plugin 'ctrlpvim/ctrlp.vim'
+" fzf native plugin
+Plugin 'junegunn/fzf'
+" fzf.vim
+Plugin 'junegunn/fzf.vim'
+
 " Linting
 Plugin 'dense-analysis/ale'
 " Auto End certain structures: when, if, etc..
@@ -35,23 +41,11 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'ervandew/supertab'
 
 " Visuals
-"Plugin 'NLKNguyen/papercolor-theme'
-"Plugin 'joshdick/onedark.vim'
-"Plugin 'nanotech/jellybeans.vim'
-"Plugin 'altercation/vim-colors-solarized'
-"Plugin 'phanviet/vim-monokai-pro'
-"Plugin 'sainnhe/sonokai'
-"Plugin 'lifepillar/vim-gruvbox8'
-"Plugin 'overcache/NeoSolarized'
-"Plugin 'KeitaNakamura/neodark.vim'
-"Plugin 'ackyshake/Spacegray.vim'
-"Plugin 'romainl/Apprentice'
 Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 " Status bar
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
 
 " Load Plugins
 call vundle#end()
@@ -110,14 +104,12 @@ let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=45
 map <Leader>n :NERDTreeFind<CR>
 
+" Remap keys for fzf and Ag
+nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <C-a> :Ag<CR>
+
 " Setup Ignores
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/node_modules/*     " MacOSX/Linux
-
-" Ignore some folders and files for CtrlP indexing
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|node_modules\|log\|tmp|vendor$',
-  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
-  \ }
 
 " Turn on ALE in Airline
 let g:airline#extensions#ale#enabled = 1
