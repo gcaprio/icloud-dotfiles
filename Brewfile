@@ -37,7 +37,6 @@ cask "ngrok"
 cask "raycast"
 
 mas "1Password 7", id: 1333542190
-mas "Magnent", id: 441258766
 mas "Patterns",id: 429449079
 mas "HazeOver", id: 430798174
 mas "Bumpr", id: 1166066070
@@ -57,10 +56,8 @@ mas "Slack", id: 803453959
 mas "Fantastical", id: 975937182
 mas "Paste", id: 967805235
 mas "Parcel",id: 639968404
-mas "Drafts", id: 1435957248
 
 # Safari Extensions
 mas "Hugh Nag Blocker", id: 1544743900
-mas "Tweaks for Twitter", id: 1567751529
 mas "Vinegar", id: 1591303229
 mas "Baking Soda", id: 1601151613
