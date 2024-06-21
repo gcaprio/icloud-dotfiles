@@ -4,6 +4,7 @@ windows:
     root: ~/source/feedgeni-workers/
     panes:
       - stripe listen --forward-to https://feedgeni-apigateway.test:443/stripe/webhook 
+      - valet share  --subdomain=no-fixed-plans
       - php artisan fg:prepare-products
       - php artisan fg:product-save
       - php artisan fg:metafields:fetch-save
