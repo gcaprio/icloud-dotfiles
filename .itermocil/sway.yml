@@ -1,8 +1,0 @@
-windows:
-  - name: SwayID
-    root: ~/source/swaypay
-    layout: even-vertical
-    panes:
-      - ngrok http 3000 --subdomain=no-fixed-plans
-      - commands:
-        - ./bin/dev
