@@ -1,8 +1,0 @@
-windows:
-  - name: Schultz Mfg
-    root: ~/source/schultz
-    layout: even-vertical
-    panes:
-      - commands:
-        - sl schultz-mfg
-        - sts

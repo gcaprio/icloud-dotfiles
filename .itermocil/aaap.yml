@@ -1,8 +1,0 @@
-windows:
-  - name: All-American Auto Parts
-    root: ~/source/allamericanautoparts
-    layout: even-vertical
-    panes:
-      - commands:
-        - sl all-american-auto-parts-ltd
-        - sts

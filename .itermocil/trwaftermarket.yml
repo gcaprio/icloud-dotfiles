@@ -1,8 +1,0 @@
-windows:
-  - name: TRW Aftermarket
-    root: ~/source/trwaftermarket
-    layout: even-vertical
-    panes:
-      - commands:
-        - sl zf-systems
-        - sts

@@ -1,8 +1,0 @@
-windows:
-  - name: Bold Auto Parts
-    root: ~/source/boldautoparts
-    layout: even-vertical
-    panes:
-      - commands:
-        - sl boldautoparts
-        - sts

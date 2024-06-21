@@ -1,8 +1,0 @@
-windows:
-  - name: Metrix Premium Parts
-    root: ~/source/metrix
-    layout: even-vertical
-    panes:
-      - commands:
-        - sl metrix-premium
-        - sts
