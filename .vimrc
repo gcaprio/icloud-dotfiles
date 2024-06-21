@@ -19,19 +19,16 @@ Plugin 'slim-template/vim-slim.git'
 " File manager
 Bundle 'scrooloose/nerdtree'
 
-" Autocomplete
 " fzf native plugin
 Plugin 'junegunn/fzf'
 " fzf.vim
 Plugin 'junegunn/fzf.vim'
-
 " Linting
 Plugin 'dense-analysis/ale'
 " Auto End certain structures: when, if, etc..
 Plugin 'tpope/vim-endwise'
-" Ruby Support
+" Ruby & Rails Support
 Plugin 'vim-ruby/vim-ruby'
-" Rails Support
 Plugin 'tpope/vim-rails'
 " Javascript Support
 Plugin 'pangloss/vim-javascript'
@@ -40,12 +37,28 @@ Plugin 'maxmellon/vim-jsx-pretty'
 " Tab Autocomplete
 Plugin 'ervandew/supertab'
 
+" Git Integration
+Plugin 'tpope/vim-fugitive'
+
+" Support repeat . command for plugins
+Plugin 'tpope/vim-repeat'
+
+" Support for Surrounding
+Plugin 'tpope/vim-surround'
+
+" Support for commenting
+Plugin 'tpope/vim-commentary'
+
 " Visuals
 Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
+Plugin 'mellow-theme/mellow.nvim'
 
 " Status bar
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" Best Practices for VIM
+Plugin 'm4xshen/hardtime.nvim'
 
 " Load Plugins
 call vundle#end()
@@ -90,8 +103,9 @@ let g:airline_powerline_fonts = 1
 "colorscheme apprentice
 
 " Catppuccin Scheme
-let g:airline_theme = 'catppuccin_mocha'
-colorschem catppuccin_frappe
+"let g:airline_theme = 'catppuccin_mocha'
+"colorschem catppuccin_frappe
+colorschem mellow
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
