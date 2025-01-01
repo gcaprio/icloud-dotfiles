@@ -51,7 +51,6 @@ Plugin 'tpope/vim-commentary'
 
 " Visuals
 Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
-Plugin 'mellow-theme/mellow.nvim'
 
 " Status bar
 Plugin 'bling/vim-airline'
@@ -96,16 +95,12 @@ set termguicolors
 
 let g:airline_powerline_fonts = 1
 
-"let g:airline_theme = 'neodark'
-"let g:spacegray_low_contrast = 1
-"let g:spacegray_use_italics = 1
-"colorscheme spacegray
-"colorscheme apprentice
+let g:spacegray_low_contrast = 1
+let g:spacegray_use_italics = 1
 
 " Catppuccin Scheme
-"let g:airline_theme = 'catppuccin_mocha'
-"colorschem catppuccin_frappe
-colorschem mellow
+let g:airline_theme = 'catppuccin_mocha'
+colorschem catppuccin_frappe
 
 au VimLeave * if filereadable("[path here]/.netrwhist")|call delete("[path here]/.netrwhist")|endif 
 
