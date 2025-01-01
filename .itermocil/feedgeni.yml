@@ -1,17 +1,18 @@
 windows:
-  - name: Feedgeni App
+  - name: FeedGeni App
     layout: even-vertical
     root: ~/source/feedgeni-workers/
     panes:
-      - stripe listen --forward-to https://feedgeni-apigateway.test:443/stripe/webhook 
-      - valet share  --subdomain=no-fixed-plans
+      #- stripe listen --forward-to https://feedgeni-apigateway.test:443/stripe/webhook 
       - php artisan fg:prepare-products
       - php artisan fg:product-save
-      - php artisan fg:metafields:fetch-save
       - php artisan fg:shopify:process-product-create-update-webhooks
       - php artisan fg:bigcommerce:process-webhooks
       - php artisan schedule:work
       - php artisan horizon
+      - commands:
+        - cd ~/source/feedgeni-apigateway
+        - ngrok http --url no-fixed-plans.ngrok.io --host-header=feedgeni-apigateway.test feedgeni-apigateway.test:443
       - commands:
         - cd ~/source/feedgeni-apigateway
         - php artisan fg:bigcommerce:process-webhooks-from-aws-sqs

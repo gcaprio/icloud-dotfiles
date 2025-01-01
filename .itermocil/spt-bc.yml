@@ -1,0 +1,7 @@
+windows:
+  - name: Standard Parts Toolkit BigCommerce App
+    root: ~/source/spt-bigcommerce-app/
+    layout: even-vertical
+    panes:
+      - ngrok http 3000 --subdomain=no-fixed-plans
+      - bin/rails server
