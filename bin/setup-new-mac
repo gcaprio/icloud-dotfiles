@@ -16,26 +16,30 @@ chmod 644 *.pub config known_hosts
 # echo "Install oh-my-zsh"
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-echo "Install Powerlevel10k Theme"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+#echo "Install Powerlevel10k Theme"
+#git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-echo "ZSH Syntax Highlighting"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#echo "ZSH Syntax Highlighting"
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-echo "ZSH Auto Complete Suggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#echo "ZSH Auto Complete Suggestions"
+#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-echo "Vundle setup"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+#echo "Vundle setup"
+#git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "scm_breeze"
-git clone https://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
-~/.scm_breeze/install.sh
+if [ ! -d "$HOME/.scm_breeze" ]; then
+    git clone https://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+    ~/.scm_breeze/install.sh
+else
+    echo "scm_breeze is already installed in ~/.scm_breeze"
+fi
 
 
 cd "$HOME"
 # Link up the dotfiles
-for link in .itermcil .gitconfig .gitignore_global .vim .vimrc bin .p10k_zsh .zshrc Brewfile; do
+for link in .itermcil .gitconfig .gitignore_global bin Brewfile; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' already exists"
   else
@@ -90,25 +94,25 @@ fi
 
 # Install Brewfile deps
 cd
-brew bundle install ~/icloud-drive/dotfiles/Brewfile
+brew bundle install --file=~/icloud-drive/dotfiles/Brewfile
 
 # Create legacy dir used by asdf ruby
-sudo mkdir /usr/local/opt
-sudo chown -R gcaprio /usr/local/opt
+#sudo mkdir /usr/local/opt
+#sudo chown -R gcaprio /usr/local/opt
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
+#git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf install ruby 3.1.3
+#export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
+#asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+#asdf install ruby 3.1.3
 
-asdf plugin-add php https://github.com/asdf-community/asdf-php.git
+#asdf plugin-add php https://github.com/asdf-community/asdf-php.git
 
 # Setup ngrok
-ngrok config add-authtoken 1zkIJKvzuFwk5JXhahRyKFCa1RI_6GwCghvzvrqn56SufMLwe
+#ngrok config add-authtoken 1zkIJKvzuFwk5JXhahRyKFCa1RI_6GwCghvzvrqn56SufMLwe
 
 # install csv-diff
-pip install csv-diff
+#pip install csv-diff
 
 # Setup Reverse Search w/ fzf
-$(brew --prefix)/opt/fzf/install
+#$(brew --prefix)/opt/fzf/install
