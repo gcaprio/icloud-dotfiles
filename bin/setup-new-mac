@@ -16,11 +16,13 @@ chmod 644 *.pub config known_hosts
 echo "Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-#echo "ZSH Syntax Highlighting"
-#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+echo "ZSH Syntax Highlighting"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-#echo "ZSH Auto Complete Suggestions"
-#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo "ZSH Auto Complete Suggestions"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 
 echo "scm_breeze"
 if [ ! -d "$HOME/.scm_breeze" ]; then
@@ -90,23 +92,5 @@ fi
 cd
 brew bundle install --file=~/icloud-drive/dotfiles/Brewfile
 
-# Create legacy dir used by asdf ruby
-#sudo mkdir /usr/local/opt
-#sudo chown -R gcaprio /usr/local/opt
-
-#git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
-
-#export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
-#asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
-#asdf install ruby 3.1.3
-
-#asdf plugin-add php https://github.com/asdf-community/asdf-php.git
-
 # Setup ngrok
 #ngrok config add-authtoken 1zkIJKvzuFwk5JXhahRyKFCa1RI_6GwCghvzvrqn56SufMLwe
-
-# install csv-diff
-#pip install csv-diff
-
-# Setup Reverse Search w/ fzf
-#$(brew --prefix)/opt/fzf/install
