@@ -35,7 +35,7 @@ fi
 
 cd "$HOME"
 # Link up the dotfiles
-for link in .itermcil .gitconfig .gitignore_global bin Brewfile; do
+for link in .itermcil .zshrc .gitconfig .gitignore_global bin Brewfile; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' already exists"
   else

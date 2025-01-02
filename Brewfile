@@ -4,26 +4,16 @@ tap "TomAnthony/brews" # itermocli
 
 cask_args appdir: "/Applications"
 
-#brew "coreutils"
-#brew "ack"
-#brew "bat"
-#brew "htop"
-#brew "prettyping"
-#brew "tldr"
-#brew "git-delta"
+brew "bat"
+brew "htop"
+brew "tldr"
+brew "git-delta"
 brew "ripgrep"
-#brew "zoxide"
+brew "zoxide"
 brew "fzf"
 brew "zsh-autosuggestions"
-#brew "heroku"
-#brew "exiftool"
-#brew "postgresql@14"
-#brew "openssl@3"
-#brew "libyaml"
-#brew "readline"
-#brew "gmp"
-#brew "miller"
-#brew "universal-ctags"
+brew "heroku"
+brew "miller"
 
 cask "iterm2"
 cask "firefox"
@@ -50,6 +40,3 @@ mas "Spark", id: 6445813049
 mas "Save to Reader", id: 1640236961
 mas "Magnet", id: 441258766
 mas "Instapaper", id: 288545208
-
-#brew install font-hack-nerd-font
-#brew install --cask alt-tab
