@@ -1,6 +1,5 @@
 tap "shopify/shopify"
 tap "heroku/brew"
-
 tap "TomAnthony/brews" # itermocli
 
 cask_args appdir: "/Applications"
@@ -36,7 +35,6 @@ mas "Bumpr", id: 1166066070
 mas "DayOne", id: 1055511498
 mas "Boop", id: 1518425043
 mas "Reeder", id: 1529448980
-mas "Popclip", id: 445189367
 mas "CodeRunner", id: 955297617
 mas "Paprika", id: 1303222628
 mas "Pixelmator Pro", id: 1289583905
@@ -47,6 +45,9 @@ mas "Slack", id: 803453959
 mas "Fantastical", id: 975937182
 mas "Paste", id: 967805235
 mas "Parcel",id: 639968404
+mas "Spark", id: 6445813049
+mas "Save to Reader", id: 1640236961
+mas "Magnet", id: 441258766
 
 #brew install font-hack-nerd-font
 #brew install --cask alt-tab
