@@ -35,7 +35,7 @@ fi
 
 cd "$HOME"
 # Link up the dotfiles
-for link in .itermcil .zshrc .gitconfig .gitignore_global bin Brewfile; do
+for link in .itermocil .zshrc .gitconfig .gitignore_global bin Brewfile; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' already exists"
   else
@@ -92,5 +92,13 @@ fi
 cd
 brew bundle install --file=~/icloud-drive/dotfiles/Brewfile
 
+
+# Clone Neovim Kickstart Repo
+git clone https://github.com/gcaprio/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
+# Run mkcert & trust CA
+mkcert -install
+
 # Setup ngrok
-#ngrok config add-authtoken 1zkIJKvzuFwk5JXhahRyKFCa1RI_6GwCghvzvrqn56SufMLwe
+echo "Setup ngrok"
+ngrok config add-authtoken <token>
