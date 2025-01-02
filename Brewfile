@@ -48,6 +48,7 @@ mas "Parcel",id: 639968404
 mas "Spark", id: 6445813049
 mas "Save to Reader", id: 1640236961
 mas "Magnet", id: 441258766
+mas "Instapaper", id: 288545208
 
 #brew install font-hack-nerd-font
 #brew install --cask alt-tab

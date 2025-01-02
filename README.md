@@ -5,8 +5,8 @@ https://matthewpalmer.net/rocket/
 https://cocoatech.io
 https://www.dropbox.com
 https://www.soma-zone.com/LaunchControl/
+https://claude.ai/download
 
 # Setapp
 https://setapp.com/download
-https://www.inyourface.app
 
