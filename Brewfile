@@ -1,9 +1,11 @@
 tap "shopify/shopify"
 tap "heroku/brew"
 tap "TomAnthony/brews" # itermocli
+tap "raycast"
 
 cask_args appdir: "/Applications"
 
+brew "raycast"
 brew "bat"
 brew "htop"
 brew "tldr"
@@ -20,6 +22,9 @@ brew "nss"
 brew "jordanbaird-ice"
 brew "starship"
 brew "gh"
+brew "rbenv"
+brew "shopify-cli"
+
 
 cask "iterm2"
 cask "firefox"
@@ -46,3 +51,4 @@ mas "Spark", id: 6445813049
 mas "Save to Reader", id: 1640236961
 mas "Magnet", id: 441258766
 mas "Instapaper", id: 288545208
+mas "1Blocker", id: 1365531024
