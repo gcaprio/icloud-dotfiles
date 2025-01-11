@@ -1,4 +1,5 @@
 # Download
+https://unclack.app/#/
 https://pocketcasts.com/downloads/mac/
 https://readwise.io/read/download
 https://matthewpalmer.net/rocket/
@@ -16,6 +17,7 @@ https://www.git-tower.com/mac
 https://kaleidoscope.app
 https://folivora.ai
 https://licenses.cleanshot.com/download/cleanshotx
+https://download.panic.com/transmit/Transmit-5-Latest.zip
 
 # Setapp
 https://setapp.com/download
