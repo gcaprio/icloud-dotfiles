@@ -105,3 +105,7 @@ ngrok config add-authtoken <token>
 
 # Nice Starship Prompt
 starship preset pastel-powerline -o ~/.config/starship.toml
+
+# rbenv 
+rbenv init
+
