@@ -22,3 +22,9 @@ https://download.panic.com/transmit/Transmit-5-Latest.zip
 # Setapp
 https://setapp.com/download
 
+# iTerm 2 Colors
+https://rosepinetheme.com
+https://github.com/kepano/flexoki/tree/main/iterm2
+
+#Fonts
+https://github.com/microsoft/cascadia-code?tab=readme-ov-file

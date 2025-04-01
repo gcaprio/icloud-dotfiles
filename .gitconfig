@@ -1,6 +1,7 @@
 [user]
 	name = Griffin Caprio
 	email = me@griffincaprio.com
+	signingkey = key::ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8cYoU83I3tY4c35QijzD9azKLteMyEZA9lGXMmr9IFRZQ9W5xh1Rh8JTWsaiV9XZI9P+qOXIB8pM2045aIdP9W0Rk9+4DFbw4zOq72qI+e6iCzcrs+HdiKipDNuHrUiZf9OZx1dFvLt7iwQ7iVZDG9ay2nSgZQ6hwE7MHcX8QLWMrQcAZhyZbm+PhoScWXqLXOOiw4cGHmY0EM+HXuyujHIT16R0yrpDvgrPi6MpxXyLfCHc5FI50Pk37MnXTffUWVAsM0mxTFC9EgyWRHaFeXtN5yioWO/4w3GN8m7c4mg9XLNyHDWFDkwwX08eAD9rMvqgE/OKHTVIuXUhlMLiCgxl5M008ki5GZH/acxwg+F6Qyof97exBM9Q7WT9nSllwm//l1b25eccf6LdyzdSYen7+9AaHjV89KMhBGfEoVo/db1PVjlzawU+IyV6soA5baJKOzjH6Md4wkvfIu8wGH0WNWnrqNucGBigmYAcuY8qQd73Ctn2sxTztMs5T+gc= gcaprio@Griffins-MBP.ht.home
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -59,3 +60,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[gpg]
+	format = ssh

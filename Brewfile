@@ -2,9 +2,11 @@ tap "shopify/shopify"
 tap "heroku/brew"
 tap "TomAnthony/brews" # itermocli
 tap "raycast"
+tap "there"
 
 cask_args appdir: "/Applications"
 
+brew "there"
 brew "raycast"
 brew "bat"
 brew "htop"
@@ -23,8 +25,8 @@ brew "jordanbaird-ice"
 brew "starship"
 brew "gh"
 brew "rbenv"
+brew "pyenv"
 brew "shopify-cli"
-
 
 cask "iterm2"
 cask "firefox"
