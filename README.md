@@ -18,6 +18,8 @@ https://kaleidoscope.app
 https://folivora.ai
 https://licenses.cleanshot.com/download/cleanshotx
 https://download.panic.com/transmit/Transmit-5-Latest.zip
+https://magicquit.com/
+https://bauhausclock.com
 
 # Setapp
 https://setapp.com/download
