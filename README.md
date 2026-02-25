@@ -20,6 +20,9 @@ https://licenses.cleanshot.com/download/cleanshotx
 https://download.panic.com/transmit/Transmit-5-Latest.zip
 https://magicquit.com/
 https://bauhausclock.com
+https://appps.od.ua/deskminder/
+https://contrasteapp.com
+https://github.com/waydabber/BetterDisplay/?tab=readme-ov-file
 
 # Setapp
 https://setapp.com/download
@@ -28,5 +31,8 @@ https://setapp.com/download
 https://rosepinetheme.com
 https://github.com/kepano/flexoki/tree/main/iterm2
 
-#Fonts
+# Fonts
 https://github.com/microsoft/cascadia-code?tab=readme-ov-file
+
+# MCP
+https://boost.laravel.com/installed

@@ -32,6 +32,8 @@ cask "iterm2"
 cask "firefox"
 cask "google-chrome"
 cask "ngrok"
+cask "betterdisplay"
+cask "bloom"
 
 mas "Patterns",id: 429449079
 mas "HazeOver", id: 430798174
