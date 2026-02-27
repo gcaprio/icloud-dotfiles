@@ -2,12 +2,9 @@ tap "shopify/shopify"
 tap "heroku/brew"
 tap "TomAnthony/brews" # itermocli
 tap "raycast"
-tap "there"
 
 cask_args appdir: "/Applications"
 
-brew "there"
-brew "raycast"
 brew "bat"
 brew "htop"
 brew "tldr"
@@ -21,19 +18,15 @@ brew "miller"
 brew "neovim"
 brew "mkcert"
 brew "nss"
-brew "jordanbaird-ice"
 brew "starship"
 brew "gh"
 brew "rbenv"
-brew "pyenv"
 brew "shopify-cli"
 
 cask "iterm2"
 cask "firefox"
 cask "google-chrome"
 cask "ngrok"
-cask "betterdisplay"
-cask "bloom"
 
 mas "Patterns",id: 429449079
 mas "HazeOver", id: 430798174
