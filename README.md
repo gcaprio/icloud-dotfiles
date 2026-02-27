@@ -1,3 +1,6 @@
+# Neovim & Kickstart
+https://github.com/gcaprio/kickstart.nvim
+
 # Download
 https://unclack.app/#/
 https://pocketcasts.com/downloads/mac/

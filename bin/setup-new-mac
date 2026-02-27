@@ -13,16 +13,8 @@ chmod 600 *
 chmod 644 *.pub config known_hosts
 
 # Install all the things
-echo "Install oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-echo "ZSH Syntax Highlighting"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-
-echo "ZSH Auto Complete Suggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
+#echo "ZSH Syntax Highlighting"
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 echo "scm_breeze"
 if [ ! -d "$HOME/.scm_breeze" ]; then
@@ -31,7 +23,6 @@ if [ ! -d "$HOME/.scm_breeze" ]; then
 else
     echo "scm_breeze is already installed in ~/.scm_breeze"
 fi
-
 
 cd "$HOME"
 # Link up the dotfiles
@@ -105,7 +96,3 @@ ngrok config add-authtoken <token>
 
 # Nice Starship Prompt
 starship preset pastel-powerline -o ~/.config/starship.toml
-
-# rbenv 
-rbenv init
-
