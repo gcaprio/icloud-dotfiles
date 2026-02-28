@@ -3,9 +3,6 @@
 # Setapp
 https://setapp.com/download
 
-# Neovim & Kickstart
-https://github.com/gcaprio/kickstart.nvim
-
 # Download
 https://unclack.app/#/
 https://pocketcasts.com/downloads/mac/
@@ -26,15 +23,20 @@ https://folivora.ai
 https://licenses.cleanshot.com/download/cleanshotx
 https://download.panic.com/transmit/Transmit-5-Latest.zip
 https://bauhausclock.com
-
-
-# TBD:
-https://boost.laravel.com/installed
-
-# iTerm 2 Colors
-https://rosepinetheme.com
-https://github.com/kepano/flexoki/tree/main/iterm2
+https://download.roonlabs.net/builds/Roon.dmg
+https://chatgpt.com/download/
+https://www.macbartender.com/
+https://us-shop.nanoleaf.me/pages/nanoleaf-desktop-app
+https://www.stclairsoft.com/cgi-bin/dl.cgi?DX
 
 # Fonts
 https://github.com/microsoft/cascadia-code?tab=readme-ov-file
-https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
+
+# Popclip Extensions
+https://www.popclip.app/extensions/x/d38ynn
+https://www.popclip.app/extensions/x/1zemre
+https://www.popclip.app/extensions/x/966gax
+https://www.popclip.app/extensions/x/07802r
+https://www.popclip.app/extensions/x/j7ds2s
+https://www.popclip.app/extensions/x/px544f
+https://www.popclip.app/extensions/x/q52q9r

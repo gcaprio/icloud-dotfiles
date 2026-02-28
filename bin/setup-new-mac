@@ -46,13 +46,6 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Sets default save target to be a local disk, not iCloud
 defaults write -g NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Enable Develop Menu and Web Inspector
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true 
-defaults write com.apple.Safari IncludeDevelopMenu -bool true 
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true 
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true 
-defaults write -g WebKitDeveloperExtras -bool true
-
 # Use Plain Text Mode as Default
 defaults write com.apple.TextEdit RichText -int 0
 

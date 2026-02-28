@@ -1,7 +1,5 @@
-tap "shopify/shopify"
 tap "heroku/brew"
 tap "TomAnthony/brews" # itermocli
-tap "raycast"
 
 cask_args appdir: "/Applications"
 
@@ -21,7 +19,6 @@ brew "nss"
 brew "starship"
 brew "gh"
 brew "rbenv"
-brew "shopify-cli"
 
 cask "iterm2"
 cask "firefox"
