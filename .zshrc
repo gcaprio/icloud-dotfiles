@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/mysql-client@8.0/bin:/opt/homebrew/sbin:"$HOME/Library/Application Support/Herd/bin":$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/mysql-client@8.0/bin:/opt/homebrew/sbin:"$HOME/Library/Application Support/Herd/bin":/opt/homebrew/opt/postgresql@15/bin/:$PATH
 
 set -o vi
 
